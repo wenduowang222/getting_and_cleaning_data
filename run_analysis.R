@@ -62,5 +62,5 @@ average <- arrange(average, subject, activity)
 #to state the fact that they are the mean of previous variables
 colnames(average)[3:ncol(average)] <- paste0("mean_of_", colnames(average)[3:ncol(average)])
 #write the data frame to a txt
-write.table(average, file="average.txt", row.names=F)
+write.table(average, file="tidy_data.txt", row.names=F)
 #the data sets under the "Inertial Signals" directory are not used.
